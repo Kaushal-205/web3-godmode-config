@@ -20,6 +20,7 @@ forge verify-contract # Verify on explorer
 | Ethereum | 1 | https://eth.llamarpc.com | https://etherscan.io | https://api.etherscan.io/api |
 | Base | 8453 | https://mainnet.base.org | https://basescan.org | https://api.basescan.org/api |
 | Arbitrum | 42161 | https://arb1.arbitrum.io/rpc | https://arbiscan.io | https://api.arbiscan.io/api |
+| Arbitrum Sepolia | 421614 | https://sepolia-rollup.arbitrum.io/rpc | https://sepolia.arbiscan.io | https://api-sepolia.arbiscan.io/api |
 | Optimism | 10 | https://mainnet.optimism.io | https://optimistic.etherscan.io | https://api-optimistic.etherscan.io/api |
 | Polygon | 137 | https://polygon-rpc.com | https://polygonscan.com | https://api.polygonscan.com/api |
 | Abstract | 2741 | https://api.mainnet.abs.xyz | https://abscan.org | https://api.abscan.org/api |
@@ -58,11 +59,14 @@ via_ir = false
 mainnet = "${ETH_RPC_URL}"
 base = "${BASE_RPC_URL}"
 arbitrum = "${ARB_RPC_URL}"
+arbitrum_sepolia = "${ARB_SEPOLIA_RPC_URL}"
 abstract_mainnet = "https://api.mainnet.abs.xyz"
 abstract_testnet = "https://api.testnet.abs.xyz"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_API_KEY}" }
 base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
+arbitrum = { key = "${ARBISCAN_API_KEY}", url = "https://api.arbiscan.io/api" }
+arbitrum_sepolia = { key = "${ARBISCAN_API_KEY}", url = "https://api-sepolia.arbiscan.io/api", chain = 421614 }
 abstract_mainnet = { key = "${ABSCAN_API_KEY}", url = "https://api.abscan.org/api", chain = 2741 }
 ```

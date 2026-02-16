@@ -62,6 +62,7 @@ cp -r skills/vercel-react-best-practices/ ~/.claude/skills/
 
 # Just a single chain
 cp -r skills/web3-megaeth/ ~/.claude/skills/
+cp -r skills/arbitrum-dapp-skill/ ~/.claude/skills/
 ```
 
 ## Customization
@@ -264,7 +265,7 @@ Both are triggered automatically via the CLAUDE.md delegation table — no manua
 
 ## What's Included
 
-### Skills (16)
+### Skills (17)
 
 | Skill | What It Does |
 |-------|-------------|
@@ -283,6 +284,7 @@ Both are triggered automatically via the CLAUDE.md delegation table — no manua
 | `web3-solana-simd` | Key Solana improvement proposals + concepts |
 | `web3-monad` | MonadBFT, parallel execution, deployment |
 | `web3-megaeth` | Full MegaETH dev reference (14 files) |
+| `arbitrum-dapp-skill` | Arbitrum dApp development with Stylus (Rust) and Solidity (7 files) |
 | `web3-solidity-patterns` | Factory, Proxy, Diamond, Governor patterns |
 
 ### Agents (3)
@@ -322,6 +324,7 @@ Both are triggered automatically via the CLAUDE.md delegation table — no manua
 
 ## Credits
 
+- Arbitrum dApp skill: [hummusonrails/arbitrum-dapp-skill](https://github.com/hummusonrails/arbitrum-dapp-skill)
 - MegaETH skills: [0xBreadguy/megaeth-ai-developer-skills](https://github.com/0xBreadguy/megaeth-ai-developer-skills)
 - Vercel React best practices: [vercel/react-best-practices](https://github.com/vercel/react-best-practices)
 - Planning with files: Based on [Manus context engineering](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
